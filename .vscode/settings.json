@@ -1,0 +1,6 @@
+{
+  // 📁 PYTHONPATH
+  "terminal.integrated.env.osx": { "PYTHONPATH": "${workspaceFolder}/websocket_chat" },
+  "terminal.integrated.env.linux": { "PYTHONPATH": "${workspaceFolder}/websocket_chat" },
+  "terminal.integrated.env.windows": { "PYTHONPATH": "${workspaceFolder}/websocket_chat" }
+}

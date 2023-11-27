@@ -1,0 +1,19 @@
+services:
+  app-django-chat:
+    container_name: app-django-chat
+    build:
+      context: ./websocket_chat
+      dockerfile: Dockerfile
+    volumes:
+      - ./websocket_chat:/app
+      - /websocket_chat/.venv
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    tty: true
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"

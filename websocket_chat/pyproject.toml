@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "websocket-chat"
+version = "0.1.0"
+description = ""
+authors = ["Viktor Simon <V-U-Simon@yandex.ru>"]
+readme = "README.md"
+# packages = [{ include = "websocket_chat" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+channels = { extras = ["daphne"], version = "^4.0.0" }
+daphne = "^4.0.0"
+channels-redis = "^4.1.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
